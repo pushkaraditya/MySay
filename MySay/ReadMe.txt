@@ -9,3 +9,5 @@ http://www.asp.net/mvc/overview/security/create-an-aspnet-mvc-5-app-with-faceboo
 http://blog.brunoscopelliti.com/facebook-authentication-in-your-angularjs-web-app/
 https://blog.codecentric.de/en/2014/06/angularjs-google-sign-integration/
 https://developers.facebook.com/docs/javascript/howto/angularjs
+
+https://www.youtube.com/results?search_query=angularjs+google+authentication
