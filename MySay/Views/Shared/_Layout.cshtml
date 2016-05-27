@@ -4,6 +4,7 @@
   <title>@ViewBag.Title</title>
   <link rel="stylesheet" href="/Content/bootstrap.min.css" />
   <link rel="stylesheet" href="~/Content/bootstrap-slate.min.css" />
+  @RenderSection("Head", false)
 </head>
 <body>
   <div class="container">
@@ -19,7 +20,7 @@
             <li><a href="#">Popular Polls</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Register</a></li>
+            <li>@Html.ActionLink("Register", "Register", "Account")</li>
           </ul>
         </div>
       </div>
@@ -29,5 +30,6 @@
 
   <script src="~/Scripts/angular.min.js"></script>
   <script src="~/app/votingApp.js"></script>
+  @RenderSection("Scripts", false)
 </body>
 </html>

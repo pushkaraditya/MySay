@@ -114,6 +114,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PollsController.cs" />
     <Compile Include="DB\PollRepository.cs" />
@@ -122,11 +123,14 @@
     </Compile>
     <Compile Include="Models\Poll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="app\accountController.js" />
+    <Content Include="signin_email_demo.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="app\SignInController.js" />
     <Content Include="app\votingApp.js" />
     <Content Include="Content\bootstrap-readable.min.css" />
     <Content Include="Content\bootstrap-slate.min.css" />
@@ -171,6 +175,7 @@
     <Content Include="Views\Polls\Create.cshtml" />
     <Content Include="Views\Polls\Index.cshtml" />
     <Content Include="Views\Polls\ListPolls.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
