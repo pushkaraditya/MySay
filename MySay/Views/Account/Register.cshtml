@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section head{
+<meta name="google-signin-client_id" content="114195099775-lshhs1ugjfv3lh5f78ls46oeukg0jj9k.apps.googleusercontent.com">
+}
+
+<div ng-controller="accountController">
+  <h2>Register</h2>
+  <!-- Define controller for body. In this example we use only one controller for the scope of entire body. --><!-- Place a span that is going to act as a container for button rendering through script code. -->
+  <div id="gConnect" class="button">
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+  <a href="#" onclick="signOut();">Sign out</a>
+</div>
+
+@section Scripts{
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript">
+  function onSignIn(googleUser) {
+    debugger;
+    console.log(googleUser);
+    var profile = googleUser.getBasicProfile();
+    console.log(profile);
+  };
+</script>
+<script src="~/app/accountController.js"></script>
+}
